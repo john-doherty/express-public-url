@@ -17,7 +17,7 @@ var express = require('express');
 var app = express();
 
 // require module
-var expressPublicUrl = require('express-public-url);
+var expressPublicUrl = require('express-public-url');
 
 // add middleware to get the public Url from either the http proxy headers or current request host
 app.use(expressPublicUrl());
