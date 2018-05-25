@@ -1,0 +1,19 @@
+{
+  "name": "express-public-url",
+  "version": "1.0.0",
+  "description": "Parses HTTP headers to generate the correct public url for the application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "x-forwarded-proto",
+    "x-forwarded-host",
+    "x-forwarded-port",
+    "x-public-url",
+    "node"
+  ],
+  "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
+  "license": "MIT"
+}
