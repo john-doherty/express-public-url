@@ -1,13 +1,11 @@
 # express-public-url
 
-[![Linked In](https://img.shields.io/badge/Linked-In-blue.svg)](https://www.linkedin.com/in/john-i-doherty) [![Twitter Follow](https://img.shields.io/twitter/follow/MrJohnDoherty.svg?style=social&label=Twitter&style=plastic)](https://twitter.com/MrJohnDoherty)
-
-Parses HTTP headers to generate the correct public url for the application.
+This little module adds `req.urlBase` and `req.publicUrl` to your express routes to make it easy to get the incoming request URL regardless of where you app us running - behind a proxy, load-balancer etc.
 
 ## Installation
 
 ```bash
-$ npm install --save express-public-url
+npm install --save express-public-url
 ```
 
 ## Usage
@@ -23,7 +21,9 @@ var expressPublicUrl = require('express-public-url');
 app.use(expressPublicUrl());
 ```
 
-From within your routes you can now access the requested base URL via `req.urlBase`, regardless of where port/server your internal node service sits on.
+## Star the repo
+
+If you find this useful please star the repo, it helps us prioritize which open source bugs to fix :raised_hands:
 
 ## History
 
