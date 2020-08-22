@@ -1,6 +1,6 @@
 {
   "name": "express-public-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Makes it easy to access correct URL when running behind a proxy or load balancer",
   "main": "index.js",
   "scripts": {
