@@ -21,14 +21,10 @@ var expressPublicUrl = require('express-public-url');
 app.use(expressPublicUrl());
 ```
 
-## Star the repo
-
-If you find this useful please star the repo, it helps us prioritize which open source bugs to fix :raised_hands:
-
 ## History
 
 For change-log, check [releases](https://github.com/john-doherty/express-public-url/releases).
 
 ## License
 
-Licensed under [MIT License](LICENSE) &copy; [John Doherty](http://www.johndoherty.info)
+Licensed under [MIT License](LICENSE) &copy; [John Doherty](https://twitter.com/mrjohndoherty)
