@@ -21,9 +21,36 @@ var expressPublicUrl = require('express-public-url');
 app.use(expressPublicUrl());
 ```
 
+Pass `true` to add an `x-public-url` response header with the resolved URL, useful when debugging: `app.use(expressPublicUrl(true))`.
+
+## Values exposed
+
+All values are set per request, so concurrent requests never see each other's values.
+
+On the request object:
+
+| Property | Example |
+| --- | --- |
+| `req.urlBase` | `https://example.com` |
+| `req.publicUrl` | `https://example.com/page?a=1` |
+
+On `res.locals`, so they're available as template variables:
+
+| Variable | Example |
+| --- | --- |
+| `protocol` | `https` |
+| `domain` | `example.com` (includes the port if it's not the default) |
+| `path` | `/page` (empty string for `/`) |
+| `baseUrl` | `https://example.com` |
+| `publicUrl` | `https://example.com/page?a=1` |
+
+```html
+<meta property="og:url" content="{{protocol}}://{{domain}}{{path}}">
+```
+
 ## History
 
-For change-log, check [releases](https://github.com/john-doherty/express-public-url/releases).
+For change-log, check [CHANGELOG.md](CHANGELOG.md) and [releases](https://github.com/john-doherty/express-public-url/releases).
 
 ## License
 
