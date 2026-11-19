@@ -1,5 +1,8 @@
 # express-public-url
 
+[![Tests](https://img.shields.io/github/actions/workflow/status/john-doherty/express-public-url/ci.yml?label=Tests)](https://github.com/john-doherty/express-public-url/actions/workflows/ci.yml)
+[![Downloads](https://img.shields.io/npm/dm/express-public-url.svg?label=Downloads)](https://www.npmjs.com/package/express-public-url)
+
 This little module adds `req.urlBase` and `req.publicUrl` to your express routes to make it easy to get the incoming request URL regardless of where you app us running - behind a proxy, load-balancer etc.
 
 ## Installation
